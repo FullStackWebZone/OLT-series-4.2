@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	
+	</head>
+	<body>
+		<div class="box"></div>
+		<script type="text/javascript">
+			let box = document.querySelector('.box');
+			let shadow = '';
+			for (var i = 0; i < 500; i++)
+			{
+				shadow += (shadow? ',':'')+ i*1+'px ' + i*1+'px 0 #fcbf49';
+			}
+			box.style.boxShadow = shadow;
+		</script>
+	</body>
+</html>

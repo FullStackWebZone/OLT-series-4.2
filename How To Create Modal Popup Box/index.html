@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	
+	</head>
+	<body>
+		<a class="btn" onclick="popupToggle();">Suscribe Us</a>
+		<div id="popup">
+			<div class="content">
+				<img src="email.png">
+				<h2>Join Our Newsletter</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="inputBox">
+					<input type="email" placeholder="Enter Email">
+				</div>
+				<div class="inputBox">
+					<input type="submit" value="Sign Up" class="btn">
+				</div>
+			</div>
+			<a class="close" onclick="popupToggle();"><img src="close.png"></a>
+		</div>
+		<script type="text/javascript">
+			function popupToggle(){
+				const popup = document.getElementById('popup');
+				popup.classList.toggle('active')
+			}
+		</script>
+	</body>
+</html>
